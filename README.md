@@ -20,6 +20,9 @@ This project involves taking a baseline Linux installation from "zero to hero." 
     
   I then changed "Port 22" to "Port 2200" and saved the file.
   ```
+  ```
+  Important
+  ```
   
 3.
 
