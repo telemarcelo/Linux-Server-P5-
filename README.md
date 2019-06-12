@@ -2,12 +2,15 @@
 Project 5 for Udacity Nanodegree program
 
 ## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+This project involves taking a baseline Linux installation from "zero to hero."  I created an instance on AWS Lightsail and configured it properly for security and performance (see steps).  I then cloned my previous project Item Catalog and made it available online through and IP address.
 
 ## Steps
-### 1
-### 2
-### 3...
+1. Log in via SSH and upgrade packages:
+  I used the SSH button found on AWS log in to my instance.  I then used the following commands to upgrade my packages:
+    sudo apt-get update
+    sudo apt-get upgrade
+2.
+3.
 
 ## Support
 telemarcelo@gmail.com
