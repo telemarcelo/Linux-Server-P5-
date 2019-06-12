@@ -9,8 +9,8 @@ Let people know what your project can do specifically. Provide context and add a
 2
 3...
 
-Support
+## Support
 telemarcelo@gmail.com
 
-Authors and acknowledgment
+## Authors and acknowledgment
 Marcelo Antunes
