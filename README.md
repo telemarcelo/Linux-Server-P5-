@@ -21,7 +21,8 @@ This project involves taking a baseline Linux installation from "zero to hero." 
   I then changed "Port 22" to "Port 2200" and saved the file.
   ```
   ```
-  Important
+  Important:
+    Even though I later proceeded to change ufw (firewall) settings (detailed below), I still had to open port 2200 through the Networking tab of the Lightsail instance manager.
   ```
   
 3.
