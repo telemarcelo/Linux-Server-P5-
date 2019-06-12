@@ -22,7 +22,8 @@ This project involves taking a baseline Linux installation from "zero to hero." 
   ```
   ```
   Important:
-    Even though I later proceeded to change ufw (firewall) settings (detailed below), I still had to open port 2200 through the Networking tab of the Lightsail instance manager.
+    Even though I later proceeded to change ufw (firewall) settings (detailed below), 
+    I still had to open port 2200 through the Networking tab of the Lightsail instance manager.
   ```
   
 3.
