@@ -6,8 +6,9 @@ This project involves taking a baseline Linux installation from "zero to hero." 
 
 ### Steps
 1. Log in via SSH and upgrade packages (Secure the Server)
-  I used the SSH button found on AWS log in to my instance.  I then used the following commands to upgrade my packages:
   ```
+  I used the SSH button found on AWS log in to my instance.  I then used the following commands to upgrade my packages:
+  
     sudo apt-get update
     sudo apt-get upgrade
   ```
