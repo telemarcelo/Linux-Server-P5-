@@ -22,26 +22,69 @@ This project involves taking a baseline Linux installation from "zero to hero." 
   ```
   Important:
   ```
-    Even though I later proceeded to change ufw (firewall) settings (detailed in step 3), 
+    Even though I later proceeded to change ufw (firewall) settings (detailed in step 3 below), 
     I still had to open port 2200 through the Networking tab of the Lightsail instance manager.
   ```
   
 3. Configure the ufw (uncomplicated firewall) (Secure the server)
   ```
-  sudo ufw default deny incoming
-  sudo ufw default allow outgoing
-  sudo ufw allow 2200/tcp
-  sudo ufw allow 80/tcp
-  sudo ufw allow 123
-  sudo ufw enable
+  $ sudo ufw default deny incoming
+  $ sudo ufw default allow outgoing
+  $ sudo ufw allow 2200/tcp
+  $ sudo ufw allow 80/tcp
+  $ sudo ufw allow 123
+  $ sudo ufw enable
   ```
   
 4. Created a "grader" user (give grader access)
-  Create a new user using the adduser command:
   ```
-  adduser grader
+  Create a new user using the adduser command:
+  $ adduser grader
   ```
 5. Give grader sudo access (give grader access)
+  ```
+  Created and edited a file in /etc/sudoers.d
+  $ nano /etc/sudoers.d/grader
+  
+  Set the contents of the file to:
+  grader ALL=(ALL) NOPASSWD:ALL 
+  ```
+6. Create a SSH key pair using ssh-keygen (give grader access)
+  ```
+  Created an SSH key pair LOCALLY by typing:
+  $ ssh-keygen
+  
+  I then logged in AS GRADER and installed the public key by executing the following commands:
+  $ mkdir .ssh
+  $ touch .ssh/authorized_keys
+  
+  I opened and pasted the PUBLIC key inside the file using:
+  $ nano .ssh/authorized_keys
+  
+  At this point I proceeded to revoke password login by editing /etc/ssh/sshd_config and changing:
+  
+  PasswordAuthentication no
+  ```
+  
+7. Configure time zone (deploy project):
+  ```
+  $ sudo dpkg-reconfigure tzdata
+  Select none of the above and then UTC (both highlighted defaults)
+  ```
+  
+8. Install and configure Apache (deploy project):
+  ```
+  Installed Apache and wsgi for Python 3:
+  $ sudo apt-get install apache2
+  $ sudo apt-get install libapache2-mod-wsgi-py3
+  
+  Configure Apache:
+  $ sudo nano /etc/apache2/sites-enabled/000-default.conf
+  and add
+  WSGIScriptAlias / /var/www/html/myapp.wsgi
+  right before </virtual host>
+  
+  ```
   
   
   
@@ -49,6 +92,7 @@ This project involves taking a baseline Linux installation from "zero to hero." 
      finger
      
   dependencies
+  projects looked at
 
 ### Support
 telemarcelo@gmail.com
