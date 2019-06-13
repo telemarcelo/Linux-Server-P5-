@@ -20,14 +20,21 @@ This project involves taking a baseline Linux installation from "zero to hero." 
     
   I then changed "Port 22" to "Port 2200" and saved the file.
   ```
-  ```
   Important:
-    Even though I later proceeded to change ufw (firewall) settings (detailed below), 
+  ```
+    Even though I later proceeded to change ufw (firewall) settings (detailed in step 3), 
     I still had to open port 2200 through the Networking tab of the Lightsail instance manager.
   ```
   
-3.
-
+3. Configure the ufw (uncomplicated firewall) (Secure the server)
+  ```
+  sudo ufw default deny incoming
+  sudo ufw default allow outgoing
+  sudo ufw allow 2200/tcp
+  sudo ufw allow 80/tcp
+  sudo ufw allow 123
+  sudo ufw enable
+  ```
 ### Support
 telemarcelo@gmail.com
 
