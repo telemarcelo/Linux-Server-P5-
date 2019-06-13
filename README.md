@@ -35,6 +35,21 @@ This project involves taking a baseline Linux installation from "zero to hero." 
   sudo ufw allow 123
   sudo ufw enable
   ```
+  
+4. Created a "grader" user (give grader access)
+  Create a new user using the adduser command:
+  ```
+  adduser grader
+  ```
+5. Give grader sudo access (give grader access)
+  
+  
+  
+  installed
+     finger
+     
+  dependencies
+
 ### Support
 telemarcelo@gmail.com
 
