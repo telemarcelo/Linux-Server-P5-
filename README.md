@@ -76,6 +76,7 @@ This project involves taking a baseline Linux installation from "zero to hero." 
   ```
   Installed Apache and wsgi for Python 3:
   $ sudo apt-get install apache2
+  $ sudo apt-get install libapache2-mod-wsgi
   $ sudo apt-get install libapache2-mod-wsgi-py3
   
   Configure Apache:
@@ -83,13 +84,32 @@ This project involves taking a baseline Linux installation from "zero to hero." 
   and add
   WSGIScriptAlias / /var/www/html/myapp.wsgi
   right before </virtual host>
+  ```
+ 
+9. Install and configure Postgres (deploy project):
+  ```
+  Install Postgres:
+  $ sudo apt-get install postgresql
+  
+  By default, postrgresql does not allow remote connections.
+  
+  
+  
+  
   
   ```
-  
-  
-  
+ 
+ 
+ 
+ 
+ installed git and cloned project
+ 
+ 
   installed
      finger
+     apache
+     git
+    
      
   dependencies
   projects looked at
