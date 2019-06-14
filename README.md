@@ -1,4 +1,4 @@
-# Linux-Server-P5-
+# Linux-Server-P5
 Project 5 for Udacity Nanodegree program
 
 ### Description
@@ -93,8 +93,16 @@ This project involves taking a baseline Linux installation from "zero to hero." 
   
   By default, postrgresql does not allow remote connections.
   
+  Create a new user:
+  $ sudo adduser catalog
   
+  Creat permissions:
+  $ sudo su - postgres
+  $ createuser --interactive --pwprompt #answer the questions in the interactive prompt
   
+  Create DB (still as postgres su)
+  $ createdb -O catalog ItemCatalog
+
   
   
   ```
@@ -117,5 +125,11 @@ This project involves taking a baseline Linux installation from "zero to hero." 
 ### Support
 telemarcelo@gmail.com
 
+### Sources
+https://www.a2hosting.com/kb/developer-corner/postgresql/managing-postgresql-databases-and-users-from-the-command-line
+https://help.ubuntu.com/community/PostgreSQL
+
 ### Authors and acknowledgment
 Marcelo Antunes
+
+
