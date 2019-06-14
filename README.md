@@ -103,7 +103,7 @@ This project involves taking a baseline Linux installation from "zero to hero." 
  
  
  installed git and cloned project
- 
+ install sqlalchemy and add requirement installation from last project (see guy's)
  
   installed
      finger
