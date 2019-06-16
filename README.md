@@ -102,25 +102,27 @@ This project involves taking a baseline Linux installation from "zero to hero." 
   
   Create DB (still as postgres su)
   $ createdb -O catalog ItemCatalog
-
-  
-  
   ```
  
- 
- 
- 
- installed git and cloned project
- install sqlalchemy and add requirement installation from last project (see guy's)
- 
-  installed
-     finger
-     apache
-     git
-    
-     
-  dependencies
-  projects looked at
+10. Clone git repository (deploy Item Catalog)
+```
+Project available at:
+  https://github.com/telemarcelo/Item-Catalog.git
+```
+ Instead of using a virtualenv I opted to use sudo install:
+```
+ sudo -H pip3 install psycopg2
+  flask
+  sqlalchemy
+  psycopg2
+  oauth2
+  oauth2client
+  finger
+  apache
+  git
+```
+
+IP address: http://34.205.90.128.xip.io/
 
 ### Support
 telemarcelo@gmail.com
