@@ -131,6 +131,10 @@ telemarcelo@gmail.com
 ### Sources
 https://www.a2hosting.com/kb/developer-corner/postgresql/managing-postgresql-databases-and-users-from-the-command-line
 https://help.ubuntu.com/community/PostgreSQL
+https://github.com/jungleBadger/-nanodegree-linux-server-troubleshoot/blob/master/python3+venv+wsgi/README.md
+https://github.com/sgreenlee/Linux-Server-Configuration
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstancesConnecting.html#TroubleshootingInstancesConnectionTimeout
+https://www.codementor.io/abhishake/minimal-apache-configuration-for-deploying-a-flask-app-ubuntu-18-04-phu50a7ft
 
 ### Authors and acknowledgment
 Marcelo Antunes
